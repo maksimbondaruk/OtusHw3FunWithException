@@ -1,0 +1,46 @@
+## https://www.youtube.com/watch?v=oOC3Jd7lOAc&ab_channel=JavaScript.ru
+
+## OS-level helper files (cache, folder preferences)
+Thumbs.db
+## path /to/anywhere/Thumbs.db
+#.DS_Store
+## any/folder/.DS_Store
+
+## Logs
+#*.log
+## anywhere/my.log, NOT my.logs, my.log.tmp
+
+## Compiled files
+#*.class
+#*.py[co]
+##  same as: *.pyc OR *.pyo, NOT *.pyco
+
+## filename
+#migrate-201[5-7]*
+## anywhere/migrate-2015, migrate-20170101.db, NOT migrate-2018...
+
+## anysign
+#*.py?
+## anywhere/*.py<any char>, *.pyc OR *.pyo OR *.pyd, NOT *.py
+
+## slash at the end means a folder
+#build/
+## folder "build", NOT file "build"
+## Patterns above match anywhere in the project
+## build/
+## scripts/build/
+
+##PATH-AWARE MODE
+#/build/
+## build, but NOT scripts/build
+
+## in slash mode match relative to .gitignore
+# secret/key
+## secret/key, NOT docs/secret/key
+
+#doc/*.html
+## doc/file.html, NOT somewhere/doc/file.html
+
+
+bin/
+obj/
